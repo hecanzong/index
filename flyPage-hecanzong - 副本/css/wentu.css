@@ -1,0 +1,33 @@
+/*介绍板块css*/
+#indrotuce{
+	overflow: hidden;
+	padding: 100px 0;
+}
+#indrotuce ul{
+	width: 100%;
+}
+#indrotuce ul li{
+	text-align: left;
+	font-size: 18px;
+	box-sizing: border-box;
+	
+}
+#indrotuce ul li img{
+	width:100%;
+		height:auto;
+	}
+#indrotuce ul li:nth-child(2),#indrotuce ul li:nth-child(3),#indrotuce ul li:nth-child(6),#indrotuce ul li:nth-child(7){
+	padding:10% 6%;
+	line-height: 30px;
+}
+#indrotuce ul  li span{
+	display: inline-block;
+	padding-bottom: 25px;
+	font-size:40px;
+	line-height: 60px;
+}
+
+
+#indrotuce ul li:nth-child(3) span,#indrotuce ul li:nth-child(7) span{
+	color: rgb(112,187,255);
+}

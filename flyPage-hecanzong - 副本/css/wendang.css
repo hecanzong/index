@@ -1,0 +1,43 @@
+/* 图片铺满样式 */
+.image-full img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+/* 整体布局容器样式 */
+.content-wrapper {
+  display: flex;
+  flex-direction: column; /* 子元素垂直排列 */
+}
+
+/* 每行内容的布局样式 */
+.content-row {
+  display: flex; /* 使用flex布局 */
+  flex: 1; /* 每行占满整个容器的宽度 */
+  align-items: center; /* 垂直居中 */
+  justify-content: center; /* 水平居中 */
+  width: 100%; /* 占满整行 */
+  margin-bottom: 20px; /* 行与行之间的间距 */
+}
+
+/* 图片和文本各占一半空间 */
+.image-side, .text-side {
+  flex: 1; /* 每个部分占据一半的空间 */
+  display: flex;
+  justify-content: center; /* 内容居中 */
+  align-items: center; /* 内容居中 */
+}
+
+.image-side img {
+  width: 100%; /* 图片宽度铺满容器 */
+  height: auto; /* 高度自适应 */
+}
+
+.text-side .text-content {
+  display: flex;
+  flex-direction: column; /* 文本内容垂直排列 */
+  justify-content: center; /* 文本垂直居中对齐 */
+  align-items: flex-start; /* 文本水平左对齐 */
+}

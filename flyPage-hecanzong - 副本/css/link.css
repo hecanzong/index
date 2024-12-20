@@ -1,0 +1,126 @@
+/*联系方式合作商+尾部css*/
+#link{
+	width: 80%;
+	margin: auto;
+	padding: 100px 0;
+}
+#link .phone li:nth-child(1){
+	line-height: 30px;
+	font-size: 16px;
+	font-weight: bold;
+}
+#link .phone li:nth-child(1) span{
+	font-size: 20px;
+}
+#link .phone li:nth-child(2){
+	line-height: 30px;
+	font-size: 20px;
+	font-weight: bold;
+}
+#link .phone li:nth-child(2) span{
+	font-size: 14px;
+	color: rgb(73,73,73);
+}
+#link .phone li{
+	padding-top: 20px;
+}
+#link .linkA{
+	display: inline-block;
+	width: 100%;
+	margin-top: 50px;
+	font-size: 16px;
+	line-height: 30px;
+	color: rgb(97,176,255);
+}
+#link .linkA a{
+	text-decoration: none;
+	
+	color: rgb(97,176,255);
+	padding: 0 5px;
+}
+#link .information{
+	width: 100%;
+	padding: 50px 0;
+	min-width:1280px;
+}
+#link .information ul{
+	float: left;
+
+	padding-right: 50px;
+}
+#link .information ul li:nth-child(1){
+	font-size:20px ;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+#link .information ul:nth-child(1) li{
+	margin-bottom: 20px;
+}
+#link .information ul li{
+	
+	font-size: 14px;
+	margin-bottom: 5px;
+	line-height: 25px;
+}
+#link .information ul:nth-child(1){
+	width: 29%;
+}
+#link .information ul:nth-child(2),#link .information ul:nth-child(3){
+	width: 7%;
+}
+#link .information ul:nth-child(4){
+	width: 13%;
+}#link .information ul:nth-child(5){
+	width: 15%;
+}
+#link .information ul:nth-child(1) li:nth-child(4){
+	position: relative;
+}
+#link .information ul:nth-child(1) li:nth-child(4) img{
+	position: absolute;
+	height: 120%;
+	width: 23%;
+}
+#link .information ul:nth-child(1) li:nth-child(3),#link .information ul:nth-child(1) li:nth-child(4){
+	font-size: 18px;
+}
+#link .information ul:nth-child(1) li:nth-child(3) span{
+	color: rgb(97,176,255);
+}
+#link .information ul:nth-child(1) li:nth-child(4) img:nth-child(2){
+	left: 0%;
+}
+#link .information ul:nth-child(1) li:nth-child(4) img:nth-child(3){
+	left: 22%;
+}
+#link .information ul:nth-child(1) li:nth-child(4) img:nth-child(4){
+	left: 44%;
+}
+#link .information ul:nth-child(1) li:nth-child(4) img:nth-child(5){
+	left: 66%;
+}
+#link .linkP{
+	display: inline-block;
+	width: 100%;
+	margin-top: 100px;
+	font-size: 16px;
+	text-align: center;
+	}
+	#link .linkP p{
+		padding: 5px 0;
+	}
+#link .foot{
+	margin: 50px;
+	text-align: center;
+}
+#link .foot ul li{
+	padding: 20px 0;
+}
+#link .foot ul li:nth-child(1) span{
+	background: url(../img/link/foot/01.png) no-repeat;
+	margin-left: 20px;
+	padding-left: 20px;
+}
+#link .foot ul li img{
+	margin: auto;
+}

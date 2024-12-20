@@ -1,0 +1,786 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="hecanzong">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>起飞啦</title>
+  <link rel="stylesheet" href="/index/flyPage-hecanzong/font_4hromdnk413/iconfont.css" />
+  <link rel="stylesheet" href="/indexcss/simple.css" />
+  <link rel="stylesheet" href="/indexcss/history.css" />
+  <link rel="stylesheet" href="/indexcss/navigation.css" />
+  <link rel="stylesheet" href="/indexcss/anli.css" />
+  <link rel="stylesheet" href="/indexcss/paopao.css" />
+  <link rel="stylesheet" href="/indexcss/wendang.css" />
+  <link rel="stylesheet" href="/indexcss/wode.css" />
+  <link rel="stylesheet" href="/indexstyles.css"> <!-- 引用 CSS 文件 -->
+  <link rel="stylesheet" href="/indexcss/jianbianbeijin.css" />
+  <link rel="stylesheet" href="/indexcss/wentu.css" />
+  <link rel="stylesheet" href="/indexcss/judge.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body onload="setInterval(createBubble, 1000);">
+  <div id="bubble-container"></div>
+  <!-- 选项卡导航栏 -->
+  <nav id="tabbedNav">
+    <div class="tabs">
+      <!-- 选项卡按钮 -->
+     
+          <!-- 选项卡按钮 -->
+          <button class="tablinks active" onclick="openTab(event, 'Home')">首页</button>
+          <button class="tablinks" onclick="openTab(event, 'Templates')">模板</button>
+          <button class="tablinks" onclick="openTab(event, 'Packages')">套餐</button>
+          <button class="tablinks" onclick="openTab(event, 'Cases')">案例</button>
+          <button class="tablinks" onclick="openTab(event, 'Docs')">工具</button>
+          <button class="tablinks" onclick="openTab(event, 'AboutUs')">登录</button>
+      <!-- 图标容器 -->
+      <div class="icon-group">
+        <span class="iconfont icon-xiazai3"></span> <!-- 下载图标 -->
+        <span class="iconfont icon-sousuo"></span> <!-- 搜索图标 -->
+        <span class="iconfont icon-wode"></span> <!-- 我的图标 -->
+      </div>
+    </div>
+  </nav>
+ <!-- 首页内容 -->
+  <div id="Home" class="tabcontent">
+   
+    <div class="video">
+      <video loop="loop" autoplay="autoplay" muted="muted" volume="0" style="width:100%;height:100%;vertical-align:top;object-fit:cover;object-position:center center;min-height:850px">
+        <source type="video/webm" src="img/banner/1.mp4"></source>
+      </video>
+      <!-- 覆盖文字容器 -->
+      <div class="overlay-text">
+        <div class="titleOneMax">
+          起飞页<br />
+          自己做网站<br />
+          简单又省钱
+        </div>
+        <div class="titleTwo">
+          真「响应式」自助建站平台<br />
+          艺术品级模板 引领自助建站潮流
+        </div>
+        <div class="btn">
+          免费创建账户
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 模板内容 -->
+  <div id="Templates" class="tabcontent template-container clearfix">
+    <!-- 模板步骤说明 -->
+    <div class="steps">
+      <span>选择一款中意的模板：</span>
+      <span class="step-number">1</span><span class="step-text">选择模板</span>
+      <span class="step-number">2</span><span class="step-text">完成注册</span>
+      <span class="step-number">3</span><span="step-text">创建网站</span>
+    </div>
+    <!-- 搜索框代码 -->
+    <div class="search-box">
+        <input type="text" placeholder="搜索模板">
+        <button>搜索</button>
+    </div>
+    <!-- 模板分类列表和商品展示 -->
+  <div class="content-wrapper">
+    <!-- 模板分类列表 -->
+    <div class="template-categories">
+      <ul>
+        <li>所有模板</li>
+        <li>热门模板</li>
+        <li>V3模板</li>
+        <li>最新模板</li>
+        <li>简单模板</li>
+        <li>公司/企业</li>
+        <li>在线商城</li>
+        <li>个人网站</li>
+        <li>博客网站</li>
+        <li>一页式网站</li>
+        <li>政府/组织/论坛</li>
+        <li>设计风格</li>
+        <li>编辑器版本</li>
+      </ul>
+    </div>
+    <!-- 商品展示 -->
+    <div class="product-display">
+      <ul class="clear">
+        <!-- 商品项 -->
+        <li class="template-item">
+          <a>
+            <img src="./img/history/set/1.png" alt="商品图片" />
+          </a>
+          <p class="price">￥198.00</p>
+          <p class="title">悦轩饼家蛋糕/提拉米苏(约两磅)</p>
+          <p class="buy">
+            <a href="#" class="collection"><span></span>收藏</a>
+            <a href="#" class="add-cart"><span></span>加入购物车</a>
+          </p>
+        </li>
+        <li class="template-item">
+          <a>
+            <img src="./img/history/set/1.png" alt="商品图片" />
+          </a>
+          <p class="price">￥198.00</p>
+          <p class="title">悦轩饼家蛋糕/提拉米苏(约两磅)</p>
+          <p class="buy">
+            <a href="#" class="collection"><span></span>收藏</a>
+            <a href="#" class="add-cart"><span></span>加入购物车</a>
+          </p>
+        </li>
+        <li class="template-item">
+          <a>
+            <img src="./img/history/set/2.png" alt="商品图片" />
+          </a>
+          <p class="price">￥198.00</p>
+          <p class="title">悦轩饼家蛋糕/提拉米苏(约两磅)</p>
+          <p class="buy">
+            <a href="#" class="collection"><span></span>收藏</a>
+            <a href="#" class="add-cart"><span></span>加入购物车</a>
+          </p>
+        </li>
+        <li class="template-item">
+          <a>
+            <img src="./img/history/set/3.png" alt="商品图片" />
+          </a>
+          <p class="price">￥198.00</p>
+          <p class="title">悦轩饼家蛋糕/提拉米苏(约两磅)</p>
+          <p class="buy">
+            <a href="#" class="collection"><span></span>收藏</a>
+            <a href="#" class="add-cart"><span></span>加入购物车</a>
+          </p>
+        </li>
+        <li class="template-item">
+          <a>
+            <img src="./img/history/set/4.png" alt="商品图片" />
+          </a>
+          <p class="price">￥198.00</p>
+          <p class="title">悦轩饼家蛋糕/提拉米苏(约两磅)</p>
+          <p class="buy">
+            <a href="#" class="collection"><span></span>收藏</a>
+            <a href="#" class="add-cart"><span></span>加入购物车</a>
+          </p>
+        </li>
+        <li class="template-item">
+          <a>
+            <img src="./img/history/set/5.png" alt="商品图片" />
+          </a>
+          <p class="price">￥198.00</p>
+          <p class="title">悦轩饼家蛋糕/提拉米苏(约两磅)</p>
+          <p class="buy">
+            <a href="#" class="collection"><span></span>收藏</a>
+            <a href="#" class="add-cart"><span></span>加入购物车</a>
+          </p>
+        </li>
+        <li class="template-item">
+          <a>
+            <img src="./img/history/set/6.png" alt="商品图片" />
+          </a>
+          <p class="price">￥198.00</p>
+          <p class="title">悦轩饼家蛋糕/提拉米苏(约两磅)</p>
+          <p class="buy">
+            <a href="#" class="collection"><span></span>收藏</a>
+            <a href="#" class="add-cart"><span></span>加入购物车</a>
+          </p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+  <div id="Packages" class="tabcontent">
+    <!-- 套餐内容头部 -->
+    <header class="package-header">
+      <img src="./img/56AB643C-BE2F-4170-B324-82532B10F76A.png" alt="产品好用 价格厚道" class="popup-image" style="width:100%; max-width:600px; cursor: pointer;">
+      <h2>产品好用 价格厚道</h2>
+      <p>敢为人先，起飞页承诺网站套餐支持15天无理由退款政策！</p>
+    </header>
+    
+    <!-- 图片弹窗 -->
+    <div id="image-popup" class="popup-container" style="display:none;">
+      <span class="popup-close">&times;</span>
+      <img class="popup-image-full" src="./img/56AB643C-BE2F-4170-B324-82532B10F76A.png" alt="产品好用 价格厚道">
+    </div>
+  
+  
+    <!-- 套餐订购表单 -->
+    <form class="package-form">
+      <div class="form-group">
+        <label for="name">姓名：</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">邮箱：</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="phone">电话：</label>
+        <input type="tel" id="phone" name="phone">
+      </div>
+      <div class="form-group">
+        <label for="package">选择套餐：</label>
+        <select id="package" name="package" required>
+          <option value="">请选择一个套餐</option>
+          <option value="basic">基础套餐</option>
+          <option value="standard">标准套餐</option>
+          <option value="premium">高级套餐</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="quantity">数量：</label>
+        <input type="number" id="quantity" name="quantity" min="1" value="1">
+      </div>
+      <!-- 新增的表单字段 -->
+      <div class="form-group">
+        <label for="companyName">公司名称：</label>
+        <input type="text" id="companyName" name="companyName">
+      </div>
+      <div class="form-group">
+        <label for="address">地址：</label>
+        <input type="text" id="address" name="address">
+      </div>
+      <div class="form-group">
+        <label for="city">城市/城镇：</label>
+        <input type="text" id="city" name="city">
+      </div>
+      <div class="form-group">
+        <label for="state">州/省：</label>
+        <input type="text" id="state" name="state">
+      </div>
+      <div class="form-group">
+        <label for="postalCode">邮政编码：</label>
+        <input type="text" id="postalCode" name="postalCode">
+      </div>
+      <div class="form-group">
+        <label for="country">国家：</label>
+        <input type="text" id="country" name="country">
+      </div>
+      <div class="form-group">
+        <label for="additionalInfo">附加信息：</label>
+        <textarea id="additionalInfo" name="additionalInfo" rows="4"></textarea>
+      </div>
+      <div class="form-group">
+        <button type="submit">提交订单</button>
+      </div>
+    </form>
+  </div>
+
+<!-- 案例内容 -->
+<div id="Cases" class="tabcontent">
+  <div class="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        
+        <img src="./img/history/1.png" alt="案例图片1">
+      </div>
+      <div class="carousel-item">
+       
+        <img src="./img/history/2.png" alt="案例图片2">
+      </div>
+      <div class="carousel-item">
+      
+        <img src="./img/history/3.png" alt="案例图片3">
+      </div>
+      <div class="carousel-item">
+      
+        <img src="./img/history/4.png" alt="案例图片4">
+      </div>
+    </div>
+    <a class="carousel-control-prev" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" role="button" data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </a>
+  </div>
+   <!-- 商品栏 -->
+   <div class="product-bar-container">
+    <div class="product-item">
+      <img src="./img/xintu/4.png" alt="商品图片1" class="product-image">
+      <div class="product-details">
+        <p class="product-title">TP STAR LITE</p>
+        <p class="product-price">香港8区</p>
+        <button class="buy-button">购买</button>
+      </div>
+    </div>
+    <div class="product-item">
+      <img src="./img/xintu/5.png" alt="商品图片1" class="product-image">
+      <div class="product-details">
+        <p class="product-title">音视界</p>
+        <p class="product-price">大陆8区</p>
+        <button class="buy-button">购买</button>
+      </div>
+    </div>
+    <div class="product-item">
+      <img src="./img/xintu/6.png" alt="商品图片2" class="product-image">
+      <div class="product-details">
+        <p class="product-title">Spark X</p>
+        <p class="product-price">香港9区</p>
+        <button class="buy-button">购买</button>
+      </div>
+    </div>
+    <div class="product-item">
+      <img src="./img/xintu/7.png" alt="商品图片3" class="product-image">
+      <div class="product-details">
+        <p class="product-title">斯帝阿姿</p>
+        <p class="product-price">香港8区</p>
+        <button class="buy-button">购买</button>
+      </div>
+    </div>
+    <div class="product-item">
+      <img src="./img/xintu/8.png" alt="商品图片4" class="product-image">
+      <div class="product-details">
+        <p class="product-title">昇阳科技</p>
+        <p class="product-price">大陆8区</p>
+        <button class="buy-button">购买</button>
+      </div>
+    </div>
+    <div class="product-item">
+      <img src="./img/xintu/9.png" alt="商品图片4" class="product-image">
+      <div class="product-details">
+        <p class="product-title">鸿合智能</p>
+        <p class="product-price">￥198.00</p>
+        <button class="buy-button">购买</button>
+      </div>
+    </div>
+    <!-- 更多商品项可以在这里添加 -->
+  </div>
+</div>
+
+<!-- 工具内容 -->
+<div id="Docs" class="tabcontent">
+  <!-- 搜索框 -->
+  <input type="text" id="tabcontent" placeholder="Search">
+
+  <!-- 图片铺满 -->
+  <div class="image-full">
+    <img src="./img/xintu/1.png" alt="Full Image">
+
+  </div>
+  <div class="content-wrapper">
+    <div class="content-row">
+      <div class="image-side">
+        <img src="./img/xintu/2.png" alt="Side Image">
+      </div>
+      <div class="text-side">
+        <div class="text-content">
+          <h2>神奇的用户会话录像
+            再也不用猜了，直接观看操作录像，事半功倍</h2>
+          <p>如果您能观看到用户如何浏览您的网站，就可以追随用户轨迹，分析用户行为，找到您的网站有哪些需要改进的地方，与用户保持“心有灵犀”。啄木鸟可以神奇地解决这个问题，让用户会话录屏功能成为可能。<br>
+
+            在不影响用户体验的前提下，系统会记录用户访问的一切细节，包括鼠标移动、停留、点击、滚动翻屏、填写表单、搜索等。您可以在后台重放这个录像，找到用户的真正痛点，改进您的网站，从而提高用户的满意度和转化率。</p>
+        </div>
+      </div>
+    </div>
+    <!-- 重复以上结构以创建更多的.content-row -->
+    <div class="content-row">
+      <div class="image-side">
+        <img src="./img/xintu/3.png" alt="Side Image">
+      </div>
+      <div class="text-side">
+        <div class="text-content">
+          <h2>
+            一键多语言网站神器
+            5分钟搞定多语言，还是免费的</h2>
+          <p>
+            一键多语言网站神器
+            5分钟搞定多语言，还是免费的
+            快八哥基于AI神经网络技术，可以迅速高效地将网页内容翻译为指定语言，让您迅速拥有一个靠谱的多语言网站！ 此外，快八哥还支持对AI翻译结果进行必要的人工修正。<br>
+            
+            快八哥提供了云翻译服务，也就是说，您无需下载安装任何软件，就可以在5分钟内获得一个基于神经网络的AI翻译的多语言网站。</p>
+        </div>
+      </div>
+    </div>
+   
+  </div>
+</div>
+   <!-- 登录 -->
+<div id="AboutUs" class="tabcontent">
+  <div class="login-container">
+    <form action="/login" method="post" class="login-form">
+      <h2>登录到你的账户</h2>
+      <div class="input-group">
+        <label for="username">用户名:</label>
+        <input type="text" id="username" name="username" required>
+      </div>
+      <div class="input-group">
+        <label for="password">密码:</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      <div class="input-group">
+        <label for="rememberme">
+          <input type="checkbox" id="rememberme" name="rememberme">
+          记住我
+        </label>
+      </div>
+      <div class="form-actions">
+        <button type="submit">登录</button>
+      </div>
+      <div class="register-link">
+        还没有账号？<a href="/register">注册</a>
+      </div>
+      <div class="forgot-password-link">
+        <a href="/forgot-password">忘记密码？</a>
+      </div>
+    </form>
+  </div>
+</div>
+    <!-- 这里可以添加文档相关的内容 -->
+  </div>
+  	<!--图片加文字介绍部分-->
+    <div id="indrotuce">
+      <ul>
+        <li style="background-color: #F9F9F9;"><img src="img/introduce/2.png" ></li>
+        <li style="background-color: #f9f9f9;"><span>基于H5模板，快速搭建一个响应式网站</span><br/>起飞页™是一款简单、便捷的工具，可以帮助您制作响应式网站。我们的网站构建器，将传统的编码工作转化为直观的拖拽操作和文字录入。在这里，您仅需花上10分钟便可以完成一个H5响应式网站，您会发现完全不需要编写一行代码，这就是起飞页自助建站的神奇之处。</li>
+        <li><span>真正的响应式自助建站，自适应所有设备</span>不同于其它假响应式品牌，起飞页采用的是真正的响应式引擎。您只需对网站资料进行一次性输入，网站即可根据访问者的设备智能地呈现出最佳效果，全程无需人工干预。设备包括但不限于：计算机、Pad、微信、手机和电视。</li>
+        <li><img src="img/introduce/3.png"></li>
+        <li style="background-color: #F9F9F9;"><img src="img/introduce/4.png"></li>
+        <li style="background-color: #F9F9F9;"><span>服务器&网络&全球部署</span><br/>起飞页自助建站平台全面采用第二代云服务器和云网络。其中，服务器硬件使用最新Xeon处理器、32个物理CPU核心、RAID10存储、ECC内存、SSD硬盘，高配服务器在提供超高性能的同时，更可减少出错几率；另外，优质、昂贵的中港加速网络确保您在大陆地区也可以迅速稳定地打开香港的网站。起飞页拥有中国大陆、中国香港以及全球5个海外云节点可供选择，将网站一键部署到距离客户最近的国家和地区。</li>
+        <li><span>全面的搜索引擎优化 轻松获得更高排名</span>谁说自助建站的SEO效果就一定差？
+无需额外设置，平台自动为您生成网站地图（sitemap），帮助搜索引擎全面地对网站进行索引；同时，页面标题、页面描述以及静态化链接技术也可以帮助您更加轻松地获得较高的关键词排名。</li>
+        <li><img src="img/introduce/5.png"><a href="#">了解更多></a></li>
+      </ul>
+    </div>
+
+  <!--客户评价-->
+  <div id="judge">
+    <div class="customer">
+      <p>客户和评价</p><hr />
+      <p>起飞页系统是一款优秀稳定的产品，众多大型机构、企业都在使用平台来构建网站，以下是部分影响力较大的机构和企业，排名不分先后</p>
+      <ul class="logoCus">
+        <li><img src="img/judge/1.jpg"></li>
+        <li><img src="img/judge/2.jpg"></li>
+        <li><img src="img/judge/3.jpg"></li>
+        <li><img src="img/judge/4.jpg"></li>
+        <li><img src="img/judge/5.jpg"></li>
+        <li><img src="img/judge/6.jpg"></li>
+        <li><img src="img/judge/7.jpg"></li>
+        <li><img src="img/judge/8.jpg"></li>
+      </ul>
+    </div>
+    <div class="web">
+      <div class="webLeft"><</div>
+     <ul>
+          <li><img src="img/judge/1.png"/></li>
+          <li><p>我们尝试使用起飞页系统做了大概20个网站。目前为止，起飞页是我们使用过的功能较为完善的一个响应式自助建站系统，基本上可以满足我的企业客户的不同建站需求。有的时候，周末发给客服的问题，也能得到即时的回答，对我们这种帮助客户做网站的公司来说，后期服务是最重要的。</p>
+        <p>U-Share – 台湾知名建站公司</p></li>
+        </ul>    
+        <!--js做轮播图-->
+       <!--<ul>
+          <li><img src="img/judge/2.png"/></li>
+          <li><p>如果和WIX, Weebly或者Squarespace进行比较，我觉得起飞页更像是一个综合体。它和Squarespace一样能做出很多华丽的效果，又像weebly一样能很快的搭建博客，又和wix一样容易上手，而且还是响应式的。总之，起飞页是一个很适合我的平台。</p>
+        <p>北欧维森商旅</p></li>
+        </ul>  
+        <ul>
+          <li><img src="img/judge/3.png"/></li>
+          <li><p>选用起飞页一是因为他们就在我们隔壁，二是他们的价格确实很吸引人。在试用了3个月后，我们果断的购买了5年的套餐。起飞页不仅提供了一个美观大方的网站，也提供了稳定的后期服务。我们不断的在为客户介绍起飞页。</p>
+        <p>苏州金蝶软件</p></li>
+        </ul>  -->
+        <div class="webRight">></div> 
+    </div>
+    </div>
+  </div>
+    
+    <div id="link">
+      <ul class="phone">
+        <li>客户服务热线：<br />
+                  <span>4006-285-729</span></li>
+                  <li>工作时间：09:00~19:00（节假日定时响应)<br />
+                  <span>为每个用户提供优质的客户服务 让每个人都能自己做出赏心悦目的网站</span></li>
+                  <li><img src="img/link/9.jpg"></li>
+      </ul>
+      <div class="linkA">
+      <hr />
+      友情链接：
+      <a href="#">快八哥多语言</a>
+      <a href="#">开源CMS</a>
+      <a href="#">好问</a>
+      <a href="#">模板之家</a>
+      <a href="#">织梦猫</a>
+      <a href="#">Fotor平面设计</a>
+       <hr /> 
+  </div>   
+  <div class="information">
+    <ul>
+      <li>起飞页 · 优雅做网站</li>
+      <li>2014年起，专注于响应式建站领域。简便、美观、<br>快速、稳定、安全是我们不懈的追求。</li>
+      <li>在线客服：<span>点击交谈</span><br /> 客服热线：4006-285-729 / 0512-62969169</li>
+      <li>合作伙伴：<br><img src="img/link/information/1.png"><img src="img/link/information/2.png"><img src="img/link/information/3.png"><img src="img/link/information/4.png"></li>
+      
+    </ul>
+   
+ 
+  </div>
+  
+  <div class="linkP">
+      <hr />
+      <p>拓展您的业务，展示您的风采，或者只是尝试一下新的想法。 起飞页自助建站平台，拉近您与互联网的距离！</p>
+       <hr /> 
+  </div>   
+  <div class="foot">
+    <ul>
+      <li>增值电信业务经营许可证苏B2-20150321   苏ICP备09008221号-3  <span>苏公网安备 32059002001616号</span> </li>
+      <li><img src="img/link/foot/02.png"></li>
+      <li> 版权所有 2013-2018 苏州卡达网络科技有限公司</li>
+    </ul>
+  </div>
+    </div>
+    
+
+<!--右侧边栏-->
+<div id="aside">
+  <ul>
+  <li><i></i><a href="">在线客服</a></li>
+  <li><i></i><a href="">
+      4006285729
+    </a></li>
+  <li><i></i><a href="">
+      教程中心
+    </a></li>
+  <li><i></i><div class="hoverAside"><img src="img/aside/03.jpg" />微信客服</div></li>
+  <li><i></i><a href="">
+      QQ客服
+    </a></li>
+</ul>
+</div>
+<div id="infoListsContainer"></div>
+  <script>
+   var infoData = {
+  "关于我们": [
+    { "text": "关于我们", "url": "#" },
+    { "text": "合作伙伴", "url": "#" },
+    { "text": "联系我们", "url": "#" },
+    { "text": "加入我们", "url": "#" },
+    { "text": "网站地图", "url": "#" }
+  ],
+  "帮助中心": [
+    { "text": "常见问题", "url": "#" },
+    { "text": "注册协议", "url": "#" },
+    { "text": "隐私政策", "url": "#" },
+    { "text": "用户协议", "url": "#" },
+    { "text": "意见反馈", "url": "#" }
+  ]
+};
+
+    function renderInfoLists(data) {
+      var container = document.getElementById('infoListsContainer');
+      container.innerHTML = ''; // 清空容器内容
+
+      for (var category in data) {
+        var ul = document.createElement('ul');
+        data[category].forEach(function(item) {
+          var li = document.createElement('li');
+          if (item.url === "#") {
+            li.textContent = item.text;
+          } else {
+            var a = document.createElement('a');
+            a.href = item.url;
+            a.textContent = item.text;
+            li.appendChild(a);
+          }
+          ul.appendChild(li);
+        });
+        container.appendChild(ul);
+      }
+    }
+
+    // 页面加载完成后渲染列表
+    window.onload = function() {
+      renderInfoLists(infoData);
+    };
+    //泡泡
+function createBubble() {
+  // 创建泡泡元素
+  var bubble = document.createElement("div");
+
+  // 设置样式
+  bubble.className = "bubble";
+  bubble.style.left = Math.random() * window.innerWidth + "px";
+  bubble.style.top = Math.random() * window.innerHeight + "px";
+  bubble.style.backgroundColor = "rgb(" + Math.random() * 255 + "," + Math.random() * 255 + "," + Math.random() * 255 + ")";
+
+  // 添加到容器
+  document.getElementById("bubble-container").appendChild(bubble);
+
+  // 设置动画
+  setTimeout(function() {
+    bubble.style.opacity = 0;
+    setTimeout(function() {
+      bubble.remove();
+    }, 500);
+  }, 3000);
+}
+    // Tab切换的函数
+    function openTab(evt, tabName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(tabName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+    // 默认显示第一个选项卡
+    document.getElementsByClassName("tablinks")[0].click();
+
+    function searchTemplates() {
+      var input, filter, ul, li, a, i;
+      input = document.getElementById('templateSearch');
+      filter = input.value.toUpperCase();
+      ul = document.getElementById('templateList');
+      li = ul.getElementsByTagName('li');
+
+      for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+          li[i].style.display = "";
+        } else {
+          li[i].style.display = "none";
+        }
+      }
+    }
+    /*模板内容 */
+    function searchTemplates() {
+      var input, filter, ul, li, a, i;
+      input = document.getElementById('templateSearch');
+      filter = input.value.toUpperCase();
+      ul = document.getElementById('templateList');
+      li = ul.getElementsByTagName('li');
+
+      for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+          li[i].style.display = "";
+        } else {
+          li[i].style.display = "false";
+        }
+      }
+    }
+
+    // 初始化时填充模板列表
+    function populateTemplateList() {
+
+      var list = document.getElementById('templateList');
+      templates.forEach(function(template) {
+        var li = document.createElement('li');
+        var a = document.createElement('a');
+        a.href = template.link;
+        a.textContent = template.name;
+        li.appendChild(a);
+        list.appendChild(li);
+      });
+    }
+
+    // 页面加载完成后填充模板列表
+    document.addEventListener('DOMContentLoaded', populateTemplateList);
+     // Tab切换的函数
+     function openTab(evt, tabName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(tabName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+    // 默认显示第一个选项卡
+    document.getElementsByClassName("tablinks")[0].click();
+
+    // 滚动监听，触发动画
+    document.addEventListener('DOMContentLoaded', function() {
+      window.addEventListener('scroll', function() {
+        var revealedBoxes = document.querySelectorAll('.revealedBox');
+        revealedBoxes.forEach(function(box) {
+          var boxTop = box.getBoundingClientRect().top;
+          var windowHeight = window.innerHeight;
+
+          if (boxTop < windowHeight * 0.8) {
+            box.classList.add('revealedBox-in');
+          }
+        });
+      });
+    });
+    // 获取弹窗元素
+var popup = document.getElementById('image-popup');
+// 获取关闭按钮元素
+var closeBtn = document.getElementsByClassName('popup-close')[0];
+// 获取触发弹窗的图片元素
+var popupImage = document.querySelector('.popup-image');
+
+// 点击图片打开弹窗
+popupImage.onclick = function() {
+  popup.style.display = 'flex';
+};
+
+// 点击关闭按钮关闭弹窗
+closeBtn.onclick = function() {
+  popup.style.display = 'none';
+};
+
+// 点击弹窗外部区域关闭弹窗
+window.onclick = function(event) {
+  if (event.target == popup) {
+    popup.style.display = 'none';
+  }
+};
+/*轮播图*/
+function updateCarousel() {
+  const inner = document.querySelector('.carousel-inner');
+  inner.style.transform = `translateX(-${index * 100}%)`;
+  items.forEach(item => item.classList.remove('active'));
+  items[index].classList.add('active');
+}
+document.addEventListener('DOMContentLoaded', function() {
+  let index = 0;
+  const items = document.querySelectorAll('.carousel-item');
+  const totalItems = items.length;
+  const inner = document.querySelector('.carousel-inner');
+
+  // 更新轮播图的函数
+  function updateCarousel() {
+    inner.style.transform = `translateX(-${index * 100}%)`;
+    items.forEach(item => item.classList.remove('active'));
+    items[index].classList.add('active');
+  }
+
+  // 下一个轮播项
+  function nextSlide() {
+    index = (index + 1) % totalItems;
+    updateCarousel();
+  }
+
+  // 上一个轮播项
+  function prevSlide() {
+    index = (index - 1 + totalItems) % totalItems;
+    updateCarousel();
+  }
+
+  // 为控制按钮添加点击事件监听器
+  document.querySelector('.carousel-control-next').addEventListener('click', nextSlide);
+  
+  // 初始化轮播图
+  updateCarousel();
+
+  // 自动播放轮播图
+  setInterval(nextSlide, 3000);
+});
+//动态搜索框
+const searchBox = document.getElementById('search-box');
+
+searchBox.addEventListener('click', () => {
+  searchBox.classList.toggle('expanded');
+});
+
+ </script>
+</body>
+
+</html>

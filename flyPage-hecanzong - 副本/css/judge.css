@@ -1,0 +1,83 @@
+/* 起飞页优点部分css*/
+
+#judge .customer{
+    padding: 0 10%;
+    text-align: center;
+}
+#judge .customer p:nth-child(1){
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 100px;
+    color: rgb(51,51,51);
+}
+
+#judge .customer p:nth-child(3){
+   padding-top: 10px;
+   font-size: 16px;
+   color: rgb(169,169,169);
+}
+#judge .customer .logoCus{
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: center; /* 居中显示 */
+   margin: 20px auto; /* 居中显示 */
+   padding: 0; /* 移除默认的内边距 */
+   list-style: none; /* 移除列表样式 */
+}
+#judge .customer .logoCus li{
+   width: auto; /* 自动宽度 */
+   margin: 0 10px; /* 为图片之间添加一些间距 */
+}
+#judge .customer .logoCus li img{
+   display: block; /* 防止图片下方出现空隙 */
+   width: auto; /* 自动宽度 */
+   height: auto; /* 自动高度 */
+   max-width: 100%; /* 最大宽度不超过容器 */
+}
+#judge .web{
+   position: relative;
+}
+#judge .web ul {
+   display: flex;
+   flex-direction: row;
+   margin: auto;
+   width: 80%;
+}
+#judge .web ul li{
+   padding: 50px;
+}
+#judge .web ul li p:nth-child(1){
+   font-size: 14px;
+   color: rgb(152,152,152);
+}
+#judge .web ul li p:nth-child(2){
+   font-size: 16px;
+   text-align: right;
+   color: rgb(125,125,125);
+   padding-top: 10px;
+}
+#judge .web .webLeft{
+   position: absolute;
+   left: 7%;
+   top: 45%;
+   height: 25px;
+   width: 25px;
+   border-radius: 5px;
+   background-color: rgba(152,152,152,.4);
+   line-height: 25px;
+   text-align: center;
+   color: white;
+}
+#judge .web .webRight{
+   position: absolute;
+   right: 7%;
+   top: 45%;
+   height: 25px;
+   width: 25px;
+   border-radius: 5px;
+   background-color: rgba(152,152,152,.4);
+   line-height: 25px;
+   text-align: center;
+   color: white;
+}

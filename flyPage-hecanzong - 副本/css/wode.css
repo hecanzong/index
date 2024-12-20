@@ -1,0 +1,72 @@
+/* 登录容器样式 */
+.login-container {
+    max-width: 400px; /* 容器的最大宽度 */
+    margin: 0 auto; /* 水平居中 */
+    padding: 20px; /* 内边距 */
+    background-color: #fff; /* 背景颜色 */
+    border-radius: 5px; /* 边框圆角 */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 阴影效果 */
+  }
+  
+  /* 登录表单样式 */
+  .login-form {
+    display: flex;
+    flex-direction: column; /* 垂直布局 */
+  }
+  
+  /* 输入组样式 */
+  .input-group {
+    margin-bottom: 15px; /* 输入组之间的间距 */
+  }
+  
+  .input-group label {
+    display: block; /* 块级显示标签 */
+    margin-bottom: 5px; /* 标签与输入框之间的间距 */
+    color: #333; /* 标签文字颜色 */
+  }
+  
+  .input-group input {
+    width: 100%; /* 输入框宽度 */
+    padding: 10px; /* 输入框内边距 */
+    border: 1px solid #ddd; /* 输入框边框 */
+    border-radius: 4px; /* 输入框圆角 */
+    box-sizing: border-box; /* 边框包含在宽度内 */
+  }
+  
+  /* 记住我复选框样式 */
+  .input-group input[type="checkbox"] {
+    width: auto; /* 自动宽度 */
+    margin-right: 5px; /* 复选框与标签之间的间距 */
+  }
+  
+  /* 表单操作按钮样式 */
+  .form-actions button {
+    padding: 10px 20px; /* 按钮内边距 */
+    border: none; /* 无边框 */
+    border-radius: 4px; /* 圆角边框 */
+    background-color: #5cb85c; /* 背景颜色 */
+    color: white; /* 文字颜色 */
+    cursor: pointer; /* 鼠标手型 */
+    transition: background-color 0.3s; /* 背景色渐变效果 */
+  }
+  
+  .form-actions button:hover {
+    background-color: #4cae4c; /* 鼠标悬停时的背景颜色 */
+  }
+  
+  /* 注册链接和忘记密码链接样式 */
+  .register-link a,
+  .forgot-password-link a {
+    display: block; /* 块级显示链接 */
+    margin-top: 10px; /* 链接与按钮之间的间距 */
+    color: #337ab7; /* 链接颜色 */
+    text-decoration: none; /* 无下划线 */
+  }
+  
+  .register-link a:hover,
+  .forgot-password-link a:hover {
+    text-decoration: underline; /* 鼠标悬停时的下划线 */
+  }
+  .input-group input:hover {
+    border-color: #4A90E2; /* 鼠标悬停时的边框颜色 */
+  }
